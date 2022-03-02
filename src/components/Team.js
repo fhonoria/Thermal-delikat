@@ -6,7 +6,7 @@ function Team() {
   return (
     <div className="Team">
       <div className="container">
-        <h2>A csapat</h2>
+        <h2>Rólunk</h2>
         <div className="row">
           <div className="col-6">
             <img

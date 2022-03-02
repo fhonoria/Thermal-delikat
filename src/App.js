@@ -1,5 +1,6 @@
 import "./App.css";
 import "./components/Introduction";
+import Navbar from "./components/Navbar";
 import Introduction from "./components/Introduction";
 import Team from "./components/Team";
 import Products from "./components/Products";
@@ -9,6 +10,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <img
         src={logo}
         alt="Thermal delikat logo"
