@@ -6,6 +6,7 @@ import Team from "./components/Team";
 import Products from "./components/Products";
 import logo from "./images/logo.png";
 import Contact from "./components/Contact";
+import Slideshow from "./components/Slideshow";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         className="img-fluid w-25"
       ></img>
       <h1>Thermál Delikát</h1>
+      <Slideshow />
       <Introduction />
       <Team />
       <Products />
