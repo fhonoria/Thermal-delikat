@@ -1,0 +1,11 @@
+.background-image {
+  margin: auto;
+  height: 20px;
+  max-width: 100%;
+}
+
+.background-image .salami {
+  max-width: 100%;
+  background-size: cover;
+  padding-top: 50%;
+}
