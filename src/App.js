@@ -15,10 +15,9 @@ function App() {
       <img
         src={logo}
         alt="Thermal delikat logo"
-        className="img-fluid w-25"
+        className="img-fluid w-25 mx-auto d-block"
       ></img>
-      <h1>Thermál Delikát</h1>
-      <Slideshow />
+
       <Introduction />
       <Team />
       <Products />
