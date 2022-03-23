@@ -1,3 +1,11 @@
 a {
   font-family: "Roboto Mono", monospace;
 }
+
+.Menu {
+  margin-left: 20px;
+}
+
+.menu-link {
+  text-decoration: none;
+}

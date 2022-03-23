@@ -1,15 +1,23 @@
+import React from "react";
 import "./App.css";
-import "./components/Introduction";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import ScrollToTop from "react-scroll-to-top";
+
+import { Element } from "react-scroll";
+import Menu from "./components/Menu";
+import BackgroundImage from "./components/BackgroundImage";
 import Introduction from "./components/Introduction";
 import Team from "./components/Team";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
-import BackgroundImage from "./components/BackgroundImage";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop smooth color="#000000" />
+      <Menu />
       <BackgroundImage />
       <div className="container titel text-center">
         <h1>THERMÁL DELIKÁT</h1>
@@ -17,10 +25,21 @@ function App() {
           <em>Megnyitottunk!</em>
         </h2>
       </div>
-      <Introduction />
-      <Products />
-      <Team />
-      <Contact />
+
+      <React.Fragment>
+        <Element id="introduction" name="introduction-destination">
+          <Introduction />
+        </Element>
+        <Element id="products" name="products-destination">
+          <Products />
+        </Element>
+        <Element id="team" name="team-destination">
+          <Team />
+        </Element>
+        <Element id="contact" name="contact-destination">
+          <Contact />
+        </Element>
+      </React.Fragment>
     </div>
   );
 }

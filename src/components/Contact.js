@@ -7,7 +7,7 @@ function Contact() {
     <div className="Contact">
       <section>
         <div className="container">
-          <h2>Elérhetöség</h2>
+          <h2>Elérhetőség</h2>
           <div className="leaflet-container">
             <MapContainer center={[47.379789, 16.786528]} zoom={17}>
               <TileLayer
