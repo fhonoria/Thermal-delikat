@@ -1,12 +1,14 @@
 import React from "react";
 import "./Menu.css";
 import { Link } from "react-scroll";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
+import logo from "../images/logo.png";
 
 function Menu() {
   return (
     <div className="Menu">
       <Navbar bg="light" expand="lg">
+        <img src={logo} alt="logo" className="img-fluid logo"></img>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
