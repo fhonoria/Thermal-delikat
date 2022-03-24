@@ -1,12 +1,15 @@
 import React from "react";
 import sample from "../images/sample_product.png";
+import { Text } from "../containers/LanguageProvider";
 
 function Products() {
   return (
     <div className="Products">
       <section>
         <div className="container">
-          <h2>Termékek</h2>
+          <h2>
+            <Text tid="product-titel" />
+          </h2>
           <div className="row">
             <div className="col-4">
               <img

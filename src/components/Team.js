@@ -1,13 +1,16 @@
 import React from "react";
 import photo_FCS from "../images/FCS.jpg";
 import photo_FKT from "../images/FKT.jpg";
+import { Text } from "../containers/LanguageProvider";
 
 function Team() {
   return (
     <div className="Team">
       <section>
         <div className="container">
-          <h2>Rólunk</h2>
+          <h2>
+            <Text tid="team-titel" />
+          </h2>
           <div className="row">
             <div className="col-6">
               <img

@@ -3,6 +3,8 @@ import "./Menu.css";
 import { Link } from "react-scroll";
 import { Navbar, Nav } from "react-bootstrap";
 import logo from "../images/logo.png";
+import { Text } from "../containers/LanguageProvider";
+import LanguageSelector from "./LanguageSelector";
 
 function Menu() {
   return (
@@ -20,7 +22,9 @@ function Menu() {
               className="menu-link"
               activeClass="link-active"
             >
-              <Nav.Link>Bemutatkozás</Nav.Link>
+              <Nav.Link>
+                <Text tid="menu-intro" />
+              </Nav.Link>
             </Link>
             <Link
               to="products"
@@ -30,7 +34,9 @@ function Menu() {
               className="menu-link"
               activeClass="link-active"
             >
-              <Nav.Link>Termékek</Nav.Link>
+              <Nav.Link>
+                <Text tid="menu-product" />
+              </Nav.Link>
             </Link>
             <Link
               to="team"
@@ -40,7 +46,9 @@ function Menu() {
               className="menu-link"
               activeClass="link-active"
             >
-              <Nav.Link>Rólunk</Nav.Link>
+              <Nav.Link>
+                <Text tid="menu-team" />
+              </Nav.Link>
             </Link>
             <Link
               to="contact"
@@ -50,10 +58,13 @@ function Menu() {
               className="menu-link"
               activeClass="link-active"
             >
-              <Nav.Link>Elérhetőség</Nav.Link>
+              <Nav.Link>
+                <Text tid="menu-contact" />
+              </Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>
+        <LanguageSelector />
       </Navbar>
     </div>
   );

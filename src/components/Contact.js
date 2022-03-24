@@ -1,13 +1,16 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./Contact.css";
+import { Text } from "../containers/LanguageProvider";
 
 function Contact() {
   return (
     <div className="Contact">
       <section>
         <div className="container">
-          <h2>Elérhetőség</h2>
+          <h2>
+            <Text tid="contact-titel" />
+          </h2>
           <div className="leaflet-container">
             <MapContainer center={[47.379789, 16.786528]} zoom={17}>
               <TileLayer
