@@ -13,7 +13,7 @@ function Introduction() {
                 <Text tid="introduction-titel" />
               </h2>
 
-              <p className="text-center">
+              <p className="text-center lh-lg">
                 <Text tid="intro-text" />
               </p>
             </div>

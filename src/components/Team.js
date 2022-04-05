@@ -14,8 +14,8 @@ function Team() {
           <div className="row">
             <div className="col-6">
               <img
-                src={photo_FCS}
-                alt="Fraszt Csaba"
+                src={photo_FKT}
+                alt="Frasztné Kovács Tünde"
                 className="img-fluid w-50"
               ></img>
               <p>
@@ -30,8 +30,8 @@ function Team() {
             </div>
             <div className="col-6">
               <img
-                src={photo_FKT}
-                alt="Frasztné Kovács Tünde"
+                src={photo_FCS}
+                alt="Fraszt Csaba"
                 className="img-fluid w-50"
               ></img>
               <p>

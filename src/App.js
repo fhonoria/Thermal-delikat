@@ -17,7 +17,6 @@ function App() {
       <div className="App">
         <ScrollToTop smooth color="#000000" />
         <Menu />
-
         <BackgroundImage />
         <div className="container titel text-center">
           <h1>THERMÁL DELIKÁT</h1>
