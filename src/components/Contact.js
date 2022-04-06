@@ -11,6 +11,9 @@ function Contact() {
           <h2>
             <Text tid="contact-titel" />
           </h2>
+          <h5 className="mb-4">
+            <Text tid="opening-hours" />
+          </h5>
           <div className="leaflet-container">
             <MapContainer center={[47.379789, 16.786528]} zoom={17}>
               <TileLayer
@@ -21,14 +24,6 @@ function Contact() {
                 <Popup>Thermál delikát</Popup>
               </Marker>
             </MapContainer>
-          </div>
-          <div className="row">
-            <div className="col-6">
-              <p>email cim</p>
-            </div>
-            <div className="col-6">
-              <p>telefonszám</p>
-            </div>
           </div>
         </div>
       </section>

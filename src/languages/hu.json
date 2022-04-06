@@ -19,8 +19,11 @@
   "palinka": "Pálinkák",
   "honey": "Mézek",
   "sausage": "Kolbászok",
+  "chocolate": "Bükfürdő csoki és borok",
+
   "team-titel": "Rólunk",
-  "team1-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  "team2-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  "contact-titel": "Elérhetőség"
+  "team1-text": "A delikát társalapítója. Minden nap egy mosollyal és határtalan kedvességgel várja a vásárlókat.",
+  "team2-text": "A bolt megálmodója és kivitelezője, a szalámik és kolbászok beszállítója. A hét vége felé találkozhatsz vele a boltban.",
+  "contact-titel": "Elérhetőség",
+  "opening-hours": "Nyitva tartási idő: minden nap 9:00-18:00"
 }

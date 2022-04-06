@@ -11,6 +11,7 @@ import bor2 from "../images/bor-2.jpg";
 import palinka5 from "../images/palinka-5.jpeg";
 import mez3 from "../images/mez-3.jpeg";
 import kolbasz from "../images/kolbasz-2.jpeg";
+import csoki2 from "../images/csoki2.jpeg";
 
 function Products() {
   return (
@@ -109,6 +110,17 @@ function Products() {
               <h4>
                 <Text tid="honey" />
               </h4>
+            </div>
+            <div className="col-12">
+              <img
+                src={csoki2}
+                alt="sample product"
+                className="img-fluid"
+              ></img>
+              <h4>
+                <Text tid="chocolate" />
+              </h4>
+              <p>Kizárólag üzletünkben kapható!</p>
             </div>
           </div>
         </div>
