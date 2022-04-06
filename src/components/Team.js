@@ -2,6 +2,7 @@ import React from "react";
 import photo_FCS from "../images/FCS.jpg";
 import photo_FKT from "../images/FKT.jpg";
 import { Text } from "../containers/LanguageProvider";
+import "./Team.css";
 
 function Team() {
   return (

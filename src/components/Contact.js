@@ -11,6 +11,8 @@ function Contact() {
           <h2>
             <Text tid="contact-titel" />
           </h2>
+          <h5>9740 Bük, Termál krt. 2/A</h5>
+          <br />
           <h5 className="mb-4">
             <Text tid="opening-hours" />
           </h5>
