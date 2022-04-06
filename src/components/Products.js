@@ -107,7 +107,7 @@ function Products() {
             <div className="col-6">
               <img src={mez3} alt="sample product" className="img-fluid"></img>
               <h4>
-                <Text tid="pasta" />
+                <Text tid="honey" />
               </h4>
             </div>
           </div>
