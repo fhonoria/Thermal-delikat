@@ -43,8 +43,8 @@ function App() {
       <footer className="footer  py-3 bg-light">
         <div className="container">
           <div className="text-muted text-center">
-            Weboldalt programozta {}
-            <a href="https://www.vhis-web.de/" target="_blank">
+            Weboldalt készítette {}
+            <a href="https://www.vhis-web.de/" target="_blank" rel="noreferrer">
               vHiS-web
             </a>
           </div>
