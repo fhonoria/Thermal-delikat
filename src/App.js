@@ -9,37 +9,34 @@ import Introduction from "./components/Introduction";
 import Team from "./components/Team";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
-import { LanguageProvider } from "./containers/LanguageProvider";
 
 function App() {
   return (
-    <LanguageProvider>
-      <div className="App">
-        <ScrollToTop smooth color="#000000" />
-        <Menu />
-        <BackgroundImage />
-        <div className="container titel text-center">
-          <h1>THERMÁL DELIKÁT</h1>
-          <h2>
-            <em>Megnyitottunk!</em>
-          </h2>
-        </div>
-
-        <React.Fragment>
-          <Element id="introduction" name="introduction-destination">
-            <Introduction />
-          </Element>
-          <Element id="products" name="products-destination">
-            <Products />
-          </Element>
-          <Element id="team" name="team-destination">
-            <Team />
-          </Element>
-          <Element id="contact" name="contact-destination">
-            <Contact />
-          </Element>
-        </React.Fragment>
+    <div className="App">
+      <ScrollToTop smooth color="#000000" />
+      <Menu />
+      <BackgroundImage />
+      <div className="container titel text-center">
+        <h1>THERMÁL DELIKÁT</h1>
+        <h2>
+          <em>Megnyitottunk!</em>
+        </h2>
       </div>
+
+      <React.Fragment>
+        <Element id="introduction" name="introduction-destination">
+          <Introduction />
+        </Element>
+        <Element id="products" name="products-destination">
+          <Products />
+        </Element>
+        <Element id="team" name="team-destination">
+          <Team />
+        </Element>
+        <Element id="contact" name="contact-destination">
+          <Contact />
+        </Element>
+      </React.Fragment>
       <footer className="footer  py-3 bg-light">
         <div className="container">
           <div className="text-muted text-center">
@@ -50,7 +47,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </LanguageProvider>
+    </div>
   );
 }
 
