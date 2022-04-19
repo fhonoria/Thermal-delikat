@@ -3,10 +3,43 @@ import "./Menu.css";
 import { Link } from "react-scroll";
 import { Navbar, Nav } from "react-bootstrap";
 import logo from "../images/logo.png";
-import { Text } from "../containers/LanguageProvider";
-import LanguageSelector from "./LanguageSelector";
 
-function Menu() {
+function Menu(props) {
+  let content = {
+    Magyar: {
+      intro: "Bemutatkozás",
+      product: "Termékek",
+      team: "Rólunk",
+      contact: "Elérhetőség",
+    },
+    Deutsch: {
+      intro: "Unser Laden",
+      product: "Produkte",
+      team: "Über uns",
+      contact: "Kontakt",
+    },
+    English: {
+      intro: "Introduction",
+      product: "Products",
+      team: "About",
+      contact: "Contact",
+    },
+    Čeština: {
+      intro: "Introduction",
+      product: "Products",
+      team: "About",
+      contact: "Contact",
+    },
+  };
+
+  props.language === "Deutsch"
+    ? (content = content.Deutsch)
+    : props.language === "English"
+    ? (content = content.English)
+    : props.language === "Čeština"
+    ? (content = content.Čeština)
+    : (content = content.Magyar);
+
   return (
     <div className="Menu">
       <Navbar bg="light" expand="lg">
@@ -22,9 +55,7 @@ function Menu() {
               className="menu-link"
               activeClass="link-active"
             >
-              <Nav.Link>
-                <Text tid="menu-intro" />
-              </Nav.Link>
+              <Nav.Link>{content.intro}</Nav.Link>
             </Link>
             <Link
               to="products"
@@ -34,9 +65,7 @@ function Menu() {
               className="menu-link"
               activeClass="link-active"
             >
-              <Nav.Link>
-                <Text tid="menu-product" />
-              </Nav.Link>
+              <Nav.Link>{content.product}</Nav.Link>
             </Link>
             <Link
               to="team"
@@ -46,9 +75,7 @@ function Menu() {
               className="menu-link"
               activeClass="link-active"
             >
-              <Nav.Link>
-                <Text tid="menu-team" />
-              </Nav.Link>
+              <Nav.Link>{content.team}</Nav.Link>
             </Link>
             <Link
               to="contact"
@@ -58,13 +85,22 @@ function Menu() {
               className="menu-link"
               activeClass="link-active"
             >
-              <Nav.Link>
-                <Text tid="menu-contact" />
-              </Nav.Link>
+              <Nav.Link>{content.contact}</Nav.Link>
             </Link>
           </Nav>
+          <div className="language-select">
+            <select
+              className="customer-select"
+              value={props.language}
+              onChange={(e) => props.handleSetLanguage(e.target.value)}
+            >
+              <option>Magyar</option>
+              <option>Deutsch</option>
+              <option>English</option>
+              <option>Čeština</option>
+            </select>
+          </div>
         </Navbar.Collapse>
-        <LanguageSelector />
       </Navbar>
     </div>
   );

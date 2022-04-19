@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "../containers/LanguageProvider";
+
 import "./Products.css";
 import paprika4 from "../images/paprika-4.jpeg";
 import paprikakrem2 from "../images/paprikakrem.jpeg";
@@ -13,14 +13,78 @@ import mez3 from "../images/mez-3.jpeg";
 import kolbasz from "../images/kolbasz-2.jpeg";
 import csoki2 from "../images/csoki2.jpeg";
 
-function Products() {
+function Products(props) {
+  let content = {
+    Magyar: {
+      producttitel: "Termékek",
+      paprika: "Fűszerpaprikák",
+      paprikacream: "Paprika krémek",
+      salami: "Pick szalámi",
+      pickles: "Savanyúságok",
+      pasta: "Tészták",
+      jam: "Házi lekvárok",
+      wine: "Borok",
+      palinka: "Pálinkák",
+      honey: "Mézek",
+      sausage: "Kolbászok",
+      chocolate: "Bükfürdő csoki és borok",
+    },
+    Deutsch: {
+      producttitel: "Produkte",
+      paprika: "Gewürzpaprika",
+      paprikacream: "Paprikacreme",
+      salami: "Pick Salami",
+      pickles: "Sauergemüse",
+      pasta: "Teigwaren",
+      jam: "hausgemachte Marmelade",
+      wine: "Wein",
+      palinka: "Palinka",
+      honey: "Honig",
+      sausage: "Wurst",
+      chocolate: "Bükfürdő Schokolade und Wein",
+    },
+    English: {
+      producttitel: "Products",
+      paprika: "paprika powder",
+      paprikacream: "paprika cream",
+      salami: "Pick salami",
+      pickles: "pickles",
+      pasta: "pasta",
+      jam: "home-made jam",
+      wine: "wine",
+      palinka: "palinka",
+      honey: "honey",
+      sausage: "sausage",
+      chocolate: "Bükfürdő chocolate and wine",
+    },
+    Čeština: {
+      producttitel: "Products",
+      paprika: "paprika powder",
+      paprikacream: "paprika cream",
+      salami: "Pick salami",
+      pickles: "pickles",
+      pasta: "pasta",
+      jam: "home-made jam",
+      wine: "wine",
+      palinka: "palinka",
+      honey: "honey",
+      sausage: "sausage",
+      chocolate: "Bükfürdő chocolate and wine",
+    },
+  };
+
+  props.language === "Deutsch"
+    ? (content = content.Deutsch)
+    : props.language === "English"
+    ? (content = content.English)
+    : props.language === "Čeština"
+    ? (content = content.Čeština)
+    : (content = content.Magyar);
   return (
     <div className="Products">
       <section>
         <div className="container">
-          <h2>
-            <Text tid="product-titel" />
-          </h2>
+          <h2>{content.producttitel}</h2>
           <div className="row">
             <div className="col-6">
               <img
@@ -28,9 +92,7 @@ function Products() {
                 alt="sample product"
                 className="img-fluid"
               ></img>
-              <h4>
-                <Text tid="paprika" />
-              </h4>
+              <h4>{content.paprika}</h4>
             </div>
             <div className="col-6">
               <img
@@ -38,15 +100,11 @@ function Products() {
                 alt="sample product"
                 className="img-fluid"
               ></img>
-              <h4>
-                <Text tid="paprika-cream" />
-              </h4>
+              <h4>{content.paprikacream}</h4>
             </div>
             <div className="col-6">
               <img src={pick4} alt="sample product" className="img-fluid"></img>
-              <h4>
-                <Text tid="salami" />
-              </h4>
+              <h4>{content.salami}</h4>
             </div>
             <div className="col-6">
               <img
@@ -54,15 +112,11 @@ function Products() {
                 alt="sample product"
                 className="img-fluid"
               ></img>
-              <h4>
-                <Text tid="sausage" />
-              </h4>
+              <h4>{content.sausage}</h4>
             </div>
             <div className="col-6">
               <img src={bor2} alt="sample product" className="img-fluid"></img>
-              <h4>
-                <Text tid="wine" />
-              </h4>
+              <h4>{content.wine}</h4>
             </div>
             <div className="col-6">
               <img
@@ -70,9 +124,7 @@ function Products() {
                 alt="sample product"
                 className="img-fluid"
               ></img>
-              <h4>
-                <Text tid="palinka" />
-              </h4>
+              <h4>{content.palinka}</h4>
             </div>
             <div className="col-6">
               <img
@@ -80,9 +132,7 @@ function Products() {
                 alt="sample product"
                 className="img-fluid"
               ></img>
-              <h4>
-                <Text tid="pickles" />
-              </h4>
+              <h4>{content.pickles}</h4>
             </div>
             <div className="col-6">
               <img
@@ -90,9 +140,7 @@ function Products() {
                 alt="sample product"
                 className="img-fluid"
               ></img>
-              <h4>
-                <Text tid="pasta" />
-              </h4>
+              <h4>{content.pasta}</h4>
             </div>
             <div className="col-6">
               <img
@@ -100,16 +148,11 @@ function Products() {
                 alt="sample product"
                 className="img-fluid"
               ></img>
-              <h4>
-                {" "}
-                <Text tid="jam" />
-              </h4>
+              <h4> {content.jam}</h4>
             </div>
             <div className="col-6">
               <img src={mez3} alt="sample product" className="img-fluid"></img>
-              <h4>
-                <Text tid="honey" />
-              </h4>
+              <h4>{content.honey}</h4>
             </div>
             <div className="col-12">
               <img
@@ -117,9 +160,7 @@ function Products() {
                 alt="sample product"
                 className="img-fluid"
               ></img>
-              <h4>
-                <Text tid="chocolate" />
-              </h4>
+              <h4>{content.chocolate}</h4>
               <p>Kizárólag üzletünkben kapható!</p>
             </div>
           </div>

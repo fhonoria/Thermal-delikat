@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "react-scroll-to-top";
@@ -9,46 +9,76 @@ import Introduction from "./components/Introduction";
 import Team from "./components/Team";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App() {
+function App(props) {
+  let languageStoredInLocalStorage = localStorage.getItem("language");
+  let [language, setLanguage] = useState(
+    languageStoredInLocalStorage ? languageStoredInLocalStorage : "Magyar"
+  );
+
+  let content = {
+    Magyar: {
+      open: "Megnyitottunk!",
+    },
+    Deutsch: {
+      open: "Neueröffnung!",
+    },
+    English: {
+      open: "We are open!",
+    },
+    Čeština: {
+      open: "We are open!",
+    },
+  };
+
+  language === "Deutsch"
+    ? (content = content.Deutsch)
+    : language === "English"
+    ? (content = content.English)
+    : language === "Čeština"
+    ? (content = content.Čeština)
+    : (content = content.Magyar);
+
   return (
     <div className="App">
       <ScrollToTop smooth color="#000000" />
-      <Menu />
+      <Menu
+        language={language}
+        handleSetLanguage={(language) => {
+          setLanguage(language);
+          storeLanguageInLocalStorage(language);
+        }}
+      />
       <BackgroundImage />
       <div className="container titel text-center">
         <h1>THERMÁL DELIKÁT</h1>
         <h2>
-          <em>Megnyitottunk!</em>
+          <em>{content.open}!</em>
         </h2>
       </div>
 
       <React.Fragment>
         <Element id="introduction" name="introduction-destination">
-          <Introduction />
+          <Introduction language={language} />
         </Element>
         <Element id="products" name="products-destination">
-          <Products />
+          <Products language={language} />
         </Element>
         <Element id="team" name="team-destination">
-          <Team />
+          <Team language={language} />
         </Element>
         <Element id="contact" name="contact-destination">
-          <Contact />
+          <Contact language={language} />
         </Element>
       </React.Fragment>
-      <footer className="footer  py-3 bg-light">
-        <div className="container">
-          <div className="text-muted text-center">
-            Weboldalt készítette {}
-            <a href="https://www.vhis-web.de/" target="_blank" rel="noreferrer">
-              vHiS-web
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer language={language} />
     </div>
   );
+}
+
+function storeLanguageInLocalStorage(language) {
+  localStorage.setItem("language", language);
 }
 
 export default App;
