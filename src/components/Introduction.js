@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../images/logo.png";
+import "./Introduction.css";
+import logo from "../images/logo2.png";
 
 function Introduction(props) {
   let content = {
@@ -43,8 +44,8 @@ function Introduction(props) {
 
               <p className="text-center lh-lg">{content.description}</p>
             </div>
-            <div className="col-6">
-              <img src={logo} alt="logo" className="img-fluid w-75"></img>
+            <div className="col-6 align-self-center">
+              <img src={logo} alt="logo" className="img-fluid w-75 "></img>
             </div>
           </div>
         </div>

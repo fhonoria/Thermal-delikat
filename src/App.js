@@ -19,16 +19,16 @@ function App(props) {
 
   let content = {
     Magyar: {
-      open: "Megnyitottunk!",
+      open: "Megnyitottunk",
     },
     Deutsch: {
-      open: "Neueröffnung!",
+      open: "Neueröffnung",
     },
     English: {
-      open: "We are open!",
+      open: "We are open",
     },
     Čeština: {
-      open: "We are open!",
+      open: "We are open",
     },
   };
 

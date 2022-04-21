@@ -2,7 +2,7 @@ import React from "react";
 import "./Menu.css";
 import { Link } from "react-scroll";
 import { Navbar, Nav } from "react-bootstrap";
-import logo from "../images/logo.png";
+import logo from "../images/logo2.png";
 
 function Menu(props) {
   let content = {
