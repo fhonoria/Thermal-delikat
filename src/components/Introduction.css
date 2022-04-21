@@ -1,12 +1,12 @@
+.Introduction img {
+  max-width: 30%;
+}
+
 @media (max-width: 768px) {
   .Introduction h2 {
     font-size: 22px;
   }
   .Introduction p {
     font-size: 13px;
-  }
-
-  .Introduction img {
-    max-width: 30%;
   }
 }
