@@ -49,20 +49,20 @@ function Team(props) {
         <div className="container">
           <h2>{content.teamtitel}</h2>
           <div className="row">
-            <div className="col-6">
+            <div className="col-sm-6">
               <img
                 src={photo_FKT}
                 alt="Frasztné Kovács Tünde"
-                className="img-fluid w-50"
+                className="img-fluid w-sm-50"
               ></img>
               <h4>Tündi</h4>
               <p>{content.tunditext}</p>
             </div>
-            <div className="col-6">
+            <div className="col-sm-6">
               <img
                 src={photo_FCS}
                 alt="Fraszt Csaba"
-                className="img-fluid w-50"
+                className="img-fluid w-sm-50"
               ></img>
               <h4>Csabi</h4>
               <p>{content.csabitext}</p>

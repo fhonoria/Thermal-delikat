@@ -43,7 +43,11 @@ function Menu(props) {
   return (
     <div className="Menu">
       <Navbar bg="light" expand="lg">
-        <img src={logo} alt="logo" className="img-fluid logo"></img>
+        <img
+          src={logo}
+          alt="logo"
+          className="img-fluid logo d-none d-lg-block"
+        ></img>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -88,19 +92,19 @@ function Menu(props) {
               <Nav.Link>{content.contact}</Nav.Link>
             </Link>
           </Nav>
-          <div className="language-select">
-            <select
-              className="customer-select"
-              value={props.language}
-              onChange={(e) => props.handleSetLanguage(e.target.value)}
-            >
-              <option>Magyar</option>
-              <option>Deutsch</option>
-              <option>English</option>
-              <option>Čeština</option>
-            </select>
-          </div>
         </Navbar.Collapse>
+        <div className="language-select">
+          <select
+            className="customer-select"
+            value={props.language}
+            onChange={(e) => props.handleSetLanguage(e.target.value)}
+          >
+            <option>Magyar</option>
+            <option>Deutsch</option>
+            <option>English</option>
+            <option>Čeština</option>
+          </select>
+        </div>
       </Navbar>
     </div>
   );

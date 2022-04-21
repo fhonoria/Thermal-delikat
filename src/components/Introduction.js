@@ -39,12 +39,16 @@ function Introduction(props) {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-lg-6">
               <h2 className="text-center">{content.title}</h2>
-
+              <img
+                src={logo}
+                alt="logo"
+                className="img-fluid w-75 d-lg-none d--block"
+              ></img>
               <p className="text-center lh-lg">{content.description}</p>
             </div>
-            <div className="col-6 align-self-center">
+            <div className="col-6 align-self-center d-none d-lg-block">
               <img src={logo} alt="logo" className="img-fluid w-75 "></img>
             </div>
           </div>

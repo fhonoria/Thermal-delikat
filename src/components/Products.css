@@ -7,3 +7,17 @@
 .Products p {
   margin-bottom: 0px;
 }
+
+@media (max-width: 768px) {
+  .Products h2 {
+    font-size: 22px;
+  }
+  .Products h4 {
+    font-size: 15px;
+  }
+
+  .Products img {
+    height: 140px;
+    width: 200px;
+  }
+}

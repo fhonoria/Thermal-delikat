@@ -37,3 +37,26 @@ section h4 {
 .titel {
   margin: 100px 0;
 }
+
+@media (max-width: 992px) {
+  .App h1 {
+    font-size: 40px;
+  }
+  .App h2 {
+    font-size: 22px;
+  }
+
+  section {
+    margin: 30px 30px;
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .App h1 {
+    font-size: 30px;
+  }
+  .App h2 {
+    font-size: 22px;
+  }
+}

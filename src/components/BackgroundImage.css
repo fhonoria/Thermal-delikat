@@ -9,3 +9,9 @@
   background-size: cover;
   padding-top: 50%;
 }
+
+@media (max-width: 450px) {
+  .background-image .salami {
+    padding-top: 72%;
+  }
+}

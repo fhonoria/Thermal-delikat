@@ -1,3 +1,20 @@
 .Team img {
   border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+  .Team h2 {
+    font-size: 22px;
+  }
+
+  .Team h4 {
+    font-size: 18px;
+  }
+  .Team p {
+    font-size: 13px;
+  }
+
+  .Team img {
+    max-width: 75%;
+  }
+}
