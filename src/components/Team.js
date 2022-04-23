@@ -15,23 +15,23 @@ function Team(props) {
     Deutsch: {
       teamtitel: "Über uns",
       tunditext:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Sie empfängt jeden mit einem herzlichen Lächeln und berät Sie gerne.",
       csabitext:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Er hat seine Leidenschaft beruflich verwirklicht und seinen eigenen Delikatessen Laden eröffnet.",
     },
     English: {
       teamtitel: "About us",
       tunditext:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "She welcomes all customers with a warm smile and is happy to advise you.",
       csabitext:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "He turned his passion into a career and opened his own delicatessen store.",
     },
     Čeština: {
-      teamtitel: "About us",
+      teamtitel: "O nás",
       tunditext:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Spoluzakladatelka vždy Vás čeká s bezmeznou ochotou a úsměvem.",
       csabitext:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Zakladatele obchodu a dodavatele poctivých uzeniny můžete potkat v prodejně ke konci týdne.",
     },
   };
 
@@ -51,21 +51,21 @@ function Team(props) {
           <div className="row">
             <div className="col-sm-6">
               <img
-                src={photo_FKT}
-                alt="Frasztné Kovács Tünde"
-                className="img-fluid w-sm-50"
-              ></img>
-              <h4>Tündi</h4>
-              <p>{content.tunditext}</p>
-            </div>
-            <div className="col-sm-6">
-              <img
                 src={photo_FCS}
                 alt="Fraszt Csaba"
                 className="img-fluid w-sm-50"
               ></img>
               <h4>Csabi</h4>
               <p>{content.csabitext}</p>
+            </div>
+            <div className="col-sm-6">
+              <img
+                src={photo_FKT}
+                alt="Frasztné Kovács Tünde"
+                className="img-fluid w-sm-50"
+              ></img>
+              <h4>Tündi</h4>
+              <p>{content.tunditext}</p>
             </div>
           </div>
         </div>

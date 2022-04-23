@@ -2,7 +2,7 @@ import React from "react";
 import "./Menu.css";
 import { Link } from "react-scroll";
 import { Navbar, Nav } from "react-bootstrap";
-import logo from "../images/logo2.png";
+import logo from "../images/thermaldelikat.png";
 
 function Menu(props) {
   let content = {
@@ -25,10 +25,10 @@ function Menu(props) {
       contact: "Contact",
     },
     Čeština: {
-      intro: "Introduction",
-      product: "Products",
-      team: "About",
-      contact: "Contact",
+      intro: "Představení",
+      product: "Produkty",
+      team: "O nás",
+      contact: "Kontakt",
     },
   };
 

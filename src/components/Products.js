@@ -28,6 +28,7 @@ function Products(props) {
       honey: "Mézek",
       sausage: "Kolbászok",
       chocolate: "Bükfürdő csoki és borok",
+      exlusive: "Kizárólag nálunk kapható",
     },
     Deutsch: {
       producttitel: "Produkte",
@@ -42,6 +43,7 @@ function Products(props) {
       honey: "Honig",
       sausage: "Wurst",
       chocolate: "Bükfürdő Schokolade und Wein",
+      exlusive: "Nur bei uns erhältlich",
     },
     English: {
       producttitel: "Products",
@@ -56,20 +58,22 @@ function Products(props) {
       honey: "honey",
       sausage: "sausage",
       chocolate: "Bükfürdő chocolate and wine",
+      exlusive: "Only available in our store",
     },
     Čeština: {
-      producttitel: "Products",
-      paprika: "paprika powder",
-      paprikacream: "paprika cream",
-      salami: "Pick salami",
-      pickles: "pickles",
-      pasta: "pasta",
-      jam: "home-made jam",
-      wine: "wine",
-      palinka: "palinka",
-      honey: "honey",
-      sausage: "sausage",
-      chocolate: "Bükfürdő chocolate and wine",
+      producttitel: "Produkty",
+      paprika: "Mletá paprika",
+      paprikacream: "Paprikové pasty a krémy",
+      salami: "Pick Uherský salám",
+      pickles: "Nakládané zeleniny",
+      pasta: "Těstoviny",
+      jam: "Domácí marmelády",
+      wine: "Vína",
+      palinka: "Destiláty",
+      honey: "Medy",
+      sausage: "Klobásy",
+      chocolate: "Čokolády a vína Bükfürdő",
+      exlusive: "Only available in our store",
     },
   };
 
@@ -161,7 +165,7 @@ function Products(props) {
                 className="img-fluid"
               ></img>
               <h4>{content.chocolate}</h4>
-              <p>Kizárólag üzletünkben kapható!</p>
+              <p>{content.exlusive}</p>
             </div>
           </div>
         </div>

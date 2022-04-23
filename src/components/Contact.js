@@ -17,8 +17,8 @@ function Contact(props) {
       openinghours: "Opening hours: every day 9:00-18:00",
     },
     Čeština: {
-      contacttitel: "Contact",
-      openinghours: "Opening hours: every day 9:00-18:00",
+      contacttitel: "Kontakt",
+      openinghours: "Otevírací doba: denně 9:00-18:00",
     },
   };
 

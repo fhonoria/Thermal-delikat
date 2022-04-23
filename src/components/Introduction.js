@@ -1,6 +1,6 @@
 import React from "react";
 import "./Introduction.css";
-import logo from "../images/logo2.png";
+import logo from "../images/thermaldelikat.png";
 
 function Introduction(props) {
   let content = {
@@ -12,17 +12,17 @@ function Introduction(props) {
     Deutsch: {
       title: "Unser Laden",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Im März 2022 öffnete Thermál Delikàt seine Türen neben der Therme Bükfürdő. In unserem Laden finden Sie neben den bekannten Marken der ungarischen Küche, exklusive Produkte von lokal ansässigen Herstellern, die wir für unseren Markt gewinnen konnten. Unser Ziel ist es, jedem Besucher den Geschmack von Bükfürdö näherzubringen und dieses Erlebnis mit nach Hause zu nehmen.",
     },
     English: {
       title: "Introduction",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Thermál Delikát opened its doors  in March 2022 within striking distance to the Bükfürdő Thermal & Spa. In our store you will find not only the well-known brands of Hungarian delicatessen but also the products of the local producers in premium quality. We welcome all our dear customers, who would like to take a small piece of Bükfürdő´s flavors with them.",
     },
     Čeština: {
-      title: "Introduction",
+      title: "Představení",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Thermal Delikát otevřelo návěstníkům své brány v březnu 2022. V našem obchodě najdete širokou nabídkou delikátních produktů v prémiové kvalitě. Kromě známých značek na našich pultech najdete také produkty od místních výrobců. Srdečné vítáme všechny zákazníky, kteří by vzali s sebou malou ochutnávku z Bükfürdő a z jeho okolí.",
     },
   };
 
