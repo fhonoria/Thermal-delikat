@@ -13,7 +13,7 @@ function Footer(props) {
       coded1: "This website was coded by",
     },
     Čeština: {
-      coded1: "This website was coded by",
+      coded1: "Webovú stránku programovala",
     },
   };
 

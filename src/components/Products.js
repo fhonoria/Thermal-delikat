@@ -73,7 +73,7 @@ function Products(props) {
       honey: "Medy",
       sausage: "Klobásy",
       chocolate: "Čokolády a vína Bükfürdő",
-      exlusive: "Only available in our store",
+      exlusive: "Dostupné pouze u nás",
     },
   };
 

@@ -28,7 +28,7 @@ function App(props) {
       open: "We are open",
     },
     Čeština: {
-      open: "We are open",
+      open: "Otevřeli jsme prodejnu",
     },
   };
 
