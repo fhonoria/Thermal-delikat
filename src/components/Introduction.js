@@ -7,7 +7,7 @@ function Introduction(props) {
     Magyar: {
       title: "Bemutatkozás",
       description:
-        "A Thermál Delikát 2022 márciusában nyitotta meg kapuit a Bükfürdőre látogatók előtt. Üzletünkben minden jelentős magyar delikát termék megtalálható prémium minőségben. A jól ismert márkák mellett helyi termelők termékei is a polcra kerültek. Szeretettel várunk minden kedves vásárlót, akik magukkal vinnének egy kis darabot Bükfürdő és környéke ízeiből.",
+        "A Thermál Delikát 2022 márciusában nyitotta meg kapuit a Bükfürdőre látogatók előtt. Delikáteszünkben minden jelentős magyar delikát termék megtalálható prémium minőségben. A jól ismert márkák mellett helyi termelők termékei is a polcra kerültek. Szeretettel várunk minden kedves vásárlót, akik magukkal vinnének egy kis darabot Bükfürdő és környéke ízeiből.",
     },
     Deutsch: {
       title: "Unser Laden",
