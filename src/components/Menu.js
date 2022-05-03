@@ -45,7 +45,7 @@ function Menu(props) {
       <Navbar bg="light" expand="lg">
         <img
           src={logo}
-          alt="logo"
+          alt="Thermál delikát logo"
           className="img-fluid logo d-none d-lg-block"
         ></img>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

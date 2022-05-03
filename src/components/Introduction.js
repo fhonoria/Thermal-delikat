@@ -39,7 +39,11 @@ function Introduction(props) {
       <section>
         <div className="container">
           <h2 className="text-center">{content.title}</h2>
-          <img src={logo} alt="logo" className="img-fluid"></img>
+          <img
+            src={logo}
+            alt="Thermál delikát logo"
+            className="img-fluid"
+          ></img>
           <p className="text-center lh-lg">{content.description}</p>
         </div>
       </section>

@@ -93,7 +93,7 @@ function Products(props) {
             <div className="col-sm-6">
               <img
                 src={paprika4}
-                alt="sample product"
+                alt="füszerpaprika"
                 className="img-fluid"
               ></img>
               <h4>{content.paprika}</h4>
@@ -101,69 +101,49 @@ function Products(props) {
             <div className="col-sm-6">
               <img
                 src={paprikakrem2}
-                alt="sample product"
+                alt="paprika krém"
                 className="img-fluid"
               ></img>
               <h4>{content.paprikacream}</h4>
             </div>
             <div className="col-sm-6">
-              <img src={pick4} alt="sample product" className="img-fluid"></img>
+              <img src={pick4} alt="szalámi" className="img-fluid"></img>
               <h4>{content.salami}</h4>
             </div>
             <div className="col-sm-6">
-              <img
-                src={kolbasz}
-                alt="sample product"
-                className="img-fluid"
-              ></img>
+              <img src={kolbasz} alt="kolbász" className="img-fluid"></img>
               <h4>{content.sausage}</h4>
             </div>
             <div className="col-sm-6">
-              <img src={bor2} alt="sample product" className="img-fluid"></img>
+              <img src={bor2} alt="bor" className="img-fluid"></img>
               <h4>{content.wine}</h4>
             </div>
             <div className="col-sm-6">
-              <img
-                src={palinka5}
-                alt="sample product"
-                className="img-fluid"
-              ></img>
+              <img src={palinka5} alt="pálinka" className="img-fluid"></img>
               <h4>{content.palinka}</h4>
             </div>
             <div className="col-sm-6">
               <img
                 src={savanyusag2}
-                alt="sample product"
+                alt="savanyúság"
                 className="img-fluid"
               ></img>
               <h4>{content.pickles}</h4>
             </div>
             <div className="col-sm-6">
-              <img
-                src={teszta3}
-                alt="sample product"
-                className="img-fluid"
-              ></img>
+              <img src={teszta3} alt="tészta" className="img-fluid"></img>
               <h4>{content.pasta}</h4>
             </div>
             <div className="col-sm-6">
-              <img
-                src={lekvar2}
-                alt="sample product"
-                className="img-fluid"
-              ></img>
+              <img src={lekvar2} alt="lekvár" className="img-fluid"></img>
               <h4> {content.jam}</h4>
             </div>
             <div className="col-sm-6">
-              <img src={mez3} alt="sample product" className="img-fluid"></img>
+              <img src={mez3} alt="méz" className="img-fluid"></img>
               <h4>{content.honey}</h4>
             </div>
             <div className="col-12">
-              <img
-                src={csoki2}
-                alt="sample product"
-                className="img-fluid"
-              ></img>
+              <img src={csoki2} alt="csoki" className="img-fluid"></img>
               <h4>{content.chocolate}</h4>
               <p>{content.exlusive}</p>
             </div>
