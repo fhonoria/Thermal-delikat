@@ -6,7 +6,7 @@ function Contact(props) {
   let content = {
     Magyar: {
       contacttitel: "Elérhetőség",
-      openinghours: "Nyitva tartási idő: minden nap 9:00-18:00",
+      openinghours: "Nyitvatartási idő: minden nap 9:00-18:00",
     },
     Deutsch: {
       contacttitel: "Kontakt",
